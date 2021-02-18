@@ -21,7 +21,7 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: Anti-Spam.jar
-        path: build/libs/Anti O7 Spam.jar
+        path: build/libs/Anti-Spam.jar
 
     - name: Create Release
       if: strategy.job-index == 0
