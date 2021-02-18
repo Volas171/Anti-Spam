@@ -17,9 +17,9 @@ public class AntiSpam extends Plugin {
     };
     
     @Override
-    public void init(){
+    public void init() {
         netServer.admins.addChatFilter((player, text) -> {
-            for(String pasta : copypastas){
+            for(String pasta : copypastas) {
                 text = text.replaceAll("(?iu)" + pasta, "");
             }
 
@@ -27,8 +27,8 @@ public class AntiSpam extends Plugin {
         });
 
         Events.on(PlayerChatEvent.class, event -> {
-            for(String pasta : copypastas){
-                if(event.player.lastText.toLowerCase().contains(pasta.toLowerCase())) {
+            for(String pasta : copypastas) {
+                if (event.player.lastText.toLowerCase().contains(pasta.toLowerCase())) {
                     Call.sendMessage(event.player.name + " Was Kicked For Spamming");
                     event.player.con.kick("Go Away You Spammer", 100000 * 30);
 
@@ -41,8 +41,8 @@ public class AntiSpam extends Plugin {
         Events.on(PlayerConnect.class, event -> {
             final String name = event.player.name.toLowerCase();
 
-            for(String pasta : copypastas){
-                if(name.contains(pasta.toLowerCase())){
+            for(String pasta : copypastas) {
+                if (name.contains(pasta.toLowerCase())) {
                     Call.sendMessage(event.player.name + " Was Kicked For Spamming");
                     event.player.con.kick("Go Away You Spammer", 100000 * 30);
                     break;
