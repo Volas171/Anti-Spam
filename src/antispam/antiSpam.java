@@ -10,7 +10,8 @@ import static mindustry.Vars.*;
 import static mindustry.Vars.player;
 
 public class antiSpam extends Plugin{
-    //this is the most curses I've ever typed
+    //yes
+    
     public static final String[] copypastas = {"Server jacked by Fire o7. Use ozone mindustry in mod browser. powerful griefing client. https://discord.gg/2tqguRj", "Server jacked by Fire o7", "Use Ozone", "https://discord.gg/2tqguRj", "fire o7", "o7", "server hacked", "retard", "Sieg Heil O7", "nig"};
     
     @Override
