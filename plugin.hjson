@@ -1,5 +1,5 @@
 name: "Anti-Spam",
 author: "VolasYouKnow",
 description: "heck",
-main: "antispam.antiSpam",
-version: 2.0
+main: "antispam.AntiSpam",
+version: 2.1
