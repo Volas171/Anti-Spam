@@ -13,7 +13,7 @@ public class AntiSpam extends Plugin {
     public static final String[] copypastas = {
         "Server jacked by Fire o7. Use ozone mindustry in mod browser. powerful griefing client. https://discord.gg/2tqguRj",
         "Server jacked by Fire o7", "Use Ozone", "https://discord.gg/2tqguRj", "fire o7", "o7", "server hacked", "retard",
-        "Sieg Heil O7", "nig"
+        "Sieg Heil O7", "nig", "raid"
     };
     
     @Override
