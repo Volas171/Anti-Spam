@@ -32,6 +32,7 @@ public class antiSpam extends Plugin{
                 break;
             }}
             });
+        //this wont happen as name too long but oke
         Events.on(PlayerConnect.class, event -> {
             for(String pasta : copypastas){
                 if(event.player.name.toLowerCase().contains(pasta)){
