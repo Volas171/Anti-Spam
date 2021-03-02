@@ -20,7 +20,7 @@ public class AntiSpam extends Plugin {
     public void init() {
         netServer.admins.addChatFilter((player, text) -> {
             for(String pasta : copypastas) {
-                text = text.replaceAll("(?iu)" + pasta, "")
+                text = text.replaceAll("(?iu)" + pasta, "");
             }
 
             return text;
