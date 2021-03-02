@@ -21,6 +21,7 @@ public class AntiSpam extends Plugin {
         netServer.admins.addChatFilter((player, text) -> {
             for(String pasta : copypastas) {
                 text = text.replaceAll("(?iu)" + pasta, "");
+             event.player.con.kick("[red]You Where Kicked For Being Suspicious", 100000 * 30);
             }
 
             return text;
