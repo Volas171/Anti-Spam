@@ -13,7 +13,7 @@ public class AntiSpam extends Plugin {
     public static final String[] copypastas = {
         "Server jacked by Fire o7. Use ozone mindustry in mod browser. powerful griefing client. https://discord.gg/2tqguRj",
         "Server jacked by Fire o7", "Use Ozone", "https://discord.gg/2tqguRj", "fire o7", "o7", "server hacked", "retard",
-        "Sieg Heil O7", "nig", "raid"
+        "Sieg Heil O7", "nig", "raid","null"
     };
     
     @Override
@@ -37,14 +37,13 @@ public class AntiSpam extends Plugin {
             }
         });
 
-        // This wont happen as name too long but oke
+
         Events.on(PlayerConnect.class, event -> {
             final String name = event.player.name.toLowerCase();
 
             for(String pasta : copypastas) {
                 if (name.contains(pasta.toLowerCase())) {
-                    Call.sendMessage(event.player.name + " Was Kicked For Spamming");
-                    event.player.con.kick("[red]You Where Kicked For Being Suspicious", 100000 * 30);
+                    event.player.con.kick("[red]no", 100000 * 30);
                     break;
                 }
             }
